@@ -10,7 +10,6 @@ body {
     flex-direction: column;
     padding: 20px;
     background-color: white;
-    margin-bottom: 100px;
 }
 
 .btn-collapse {
@@ -85,6 +84,73 @@ body {
     animation: expand 2s forwards;
 }
 
+.container-like {
+    box-sizing: border-box;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 0px 40px;
+    height: 250px;
+    position: relative;
+}
+
+.like-btn {
+    color: white;
+    background-color: rgb(223, 36, 36);
+    border: none;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    width: 100px;
+    height: 40px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.heart {
+    position: absolute;
+    bottom: 40px;
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/heart.png'); 
+    background-size: cover;
+    animation-duration: 500ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes trajectory1 {
+    0% { transform: translateX(0) translateY(0); }
+    25% { transform: translateX(-50px) translateY(-50px); }
+    50% { transform: translateX(0) translateY(-100px); }
+    75% { transform: translateX(50px) translateY(-150px); }
+    100% { transform: translateX(0) translateY(-200px); }
+}
+
+@keyframes trajectory2 {
+    0% { transform: translateX(0) translateY(0); }
+    25% { transform: translateX(0) translateY(-50px); }
+    50% { transform: translateX(50px) translateY(-100px); }
+    75% { transform: translateX(-50px) translateY(-150px); }
+    100% { transform: translateX(0) translateY(-200px); }
+}
+
+@keyframes trajectory3 {
+    0% { transform: translateX(0) translateY(0); }
+    25% { transform: translateX(0) translateY(-50px); }
+    50% { transform: translateX(-50px) translateY(-100px); }
+    75% { transform: translateX(50px) translateY(-150px); }
+    100% { transform: translateX(0) translateY(-200px); }
+}
+
+@keyframes trajectory4 {
+    0% { transform: translateX(0) translateY(0); }
+    25% { transform: translateX(50px) translateY(-50px); }
+    50% { transform: translateX(0) translateY(-100px); }
+    75% { transform: translateX(-50px) translateY(-150px); }
+    100% { transform: translateX(0) translateY(-200px); }
+}
 
 .container-chat {
     box-sizing: border-box;
@@ -93,7 +159,6 @@ body {
     justify-content: end;
     align-items: end;
     padding: 0px 40px;
-    background-color: white;
     margin-bottom: 30px;
     height: 300px;
 }
